@@ -1,0 +1,21 @@
+.button-groupe{
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-toolbar-options {
+    position: fixed;
+    top: 10px;
+    right: 30px;
+    left: 30px;
+    box-shadow: 50px rgba(8, 74, 160, 0.664);
+}
+
+.row.box-center {
+    display: flex;
+    justify-content: center;
+}
+
+.alert{
+    display: none;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from demo.interface.club/limitless/layout_2/LTR/material/extension_image_cropper.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Jun 2017 07:55:16 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
+        type="text/css">
+    <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <!-- Page container -->
+    <div class="page-container">
+
+        <!-- Page content -->
+        <div class="page-content">
+
+            <!-- Main content -->
+            <div class="content-wrapper">
+                <!-- Content area -->
+                <div class="content">
+
+                    <!-- Cropper demonstration -->
+                    <div class="panel panel-flat">
+                        <div class="panel-heading">
+                            <h2 class="panel-title text-center">
+                                Detection de visage
+                            </h2>
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="image-cropper-container content-group" style="height: 400px;">
+                                        <img src="assets/images/demo/images/Brad/images - 2019-08-15T182808.099.jpg"
+                                            alt="" class="cropper" id="demo-cropper-image">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="content-group text-center">
+                                        <div class="eg-preview">
+                                            <div class="preview preview-lg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="btn-group btn-group-justified demo-cropper-toolbar">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default"
+                                                    data-method="getCroppedCanvas">
+                                                    Afficher le visage détécté
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Modal with cropped image -->
+                                        <div class="modal fade docs-cropped" id="getCroppedCanvasModal" tabindex="-1">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close"
+                                                            data-dismiss="modal">&times;</button>
+                                                        <h6 class="modal-title" id="getCroppedCanvasTitle">
+                                                            Detection de visage
+                                                        </h6>
+                                                    </div>
+                                                    <div class="modal-body text-center"></div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default"
+                                                            data-dismiss="modal">Fermer</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /modal with cropped image -->
+
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="text-se0mibold control-label">Largeur:</label>
+                                                <input type="text" class="form-control" id="dataWidth"
+                                                    placeholder="width">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="text-semibold control-label">Longueur:</label>
+                                                <input type="text" class="form-control" id="dataHeight"
+                                                    placeholder="height">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href="compare_img.html" class="btn btn-lg btn-primary btn-block">Passer au autre
+                        operation</a>
+                </div>
+            </div>
+        </div>
+        <!-- /cropper demonstration -->
+
+        <!-- Footer -->
+        <div class="text-muted text-center">
+            &copy; 2020. By <a href="#">Romaissa Bouksir </a>
+        </div>
+        <!-- /footer -->
+
+    </div>
+    <!-- /content area -->
+
+    </div>
+    <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+    </div>
+    <!-- /page container -->
+    <!-- Core JS files -->
+    <script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="assets/js/plugins/media/cropper.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/core/app.js"></script>
+    <script type="text/javascript" src="assets/js/pages/extension_image_cropper.js"></script>
+
+    <script type="text/javascript" src="assets/js/plugins/ui/ripple.min.js"></script>
+    <!-- /theme JS files -->
+</body>
+
+<!-- Mirrored from demo.interface.club/limitless/layout_2/LTR/material/extension_image_cropper.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Jun 2017 07:55:34 GMT -->
+
+</html>

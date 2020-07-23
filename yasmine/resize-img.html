@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from demo.interface.club/limitless/layout_2/LTR/material/extension_image_cropper.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Jun 2017 07:55:16 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
+		type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+	<link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Cropper demonstration -->
+					<div class="panel panel-flat">
+						<div class="panel-heading">
+							<h2 class="panel-title text-center">
+								Redimensionement de l'image
+							</h2>
+						</div>
+
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="image-cropper-container content-group" style="height: 400px;">
+										<img src="assets/images/demo/images/Brad/images - 2019-08-15T182808.099.jpg"
+											alt="" class="cropper" id="demo-cropper-image">
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="content-group text-center">
+										<div class="eg-preview">
+											<div class="preview preview-lg"></div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="btn-group btn-group-justified demo-cropper-toolbar">
+											<div class="btn-group">
+												<button type="button" class="btn btn-default"
+													data-method="getCroppedCanvas">
+													Afficher l'image redimensionée
+												</button>
+											</div>
+										</div>
+
+										<!-- Modal with cropped image -->
+										<div class="modal fade docs-cropped" id="getCroppedCanvasModal" tabindex="-1">
+											<div class="modal-dialog">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close"
+															data-dismiss="modal">&times;</button>
+														<h6 class="modal-title" id="getCroppedCanvasTitle">
+															Image Redimensionée
+														</h6>
+													</div>
+													<div class="modal-body text-center"></div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-default"
+															data-dismiss="modal">Fermer</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- /modal with cropped image -->
+
+									</div>
+
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group">
+												<label class="text-se0mibold control-label">Largeur:</label>
+												<input type="text" class="form-control" id="dataWidth"
+													placeholder="width">
+											</div>
+										</div>
+
+										<div class="col-lg-6">
+											<div class="form-group">
+												<label class="text-semibold control-label">Longueur:</label>
+												<input type="text" class="form-control" id="dataHeight"
+													placeholder="height">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row image-toolbar-options">
+								<div class="form-group demo-cropper-toolbar">
+									<div class="btn-group btn-group-justified">
+										<div class="btn-group">
+											<button type="button" class="btn bg-blue btn-icon" data-method="setDragMode"
+												data-option="move" title="Move">
+												<span class="icon-move"></span>
+											</button>
+										</div>
+
+										<div class="btn-group">
+											<button type="button" class="btn bg-blue btn-icon" data-method="setDragMode"
+												data-option="crop" title="Crop">
+												<span class="icon-crop2"></span>
+											</button>
+										</div>
+
+										<div class="btn-group">
+											<button type="button" class="btn bg-blue btn-icon" data-method="move"
+												data-option="-10" data-second-option="0" title="Move Left">
+												<span class="icon-arrow-left13"></span>
+											</button>
+										</div>
+
+										<div class="btn-group">
+											<button type="button" class="btn bg-blue btn-icon" data-method="move"
+												data-option="10" data-second-option="0" title="Move Right">
+												<span class="icon-arrow-right14"></span>
+											</button>
+										</div>
+
+										<div class="btn-group">
+											<button type="button" class="btn bg-blue btn-icon" data-method="move"
+												data-option="0" data-second-option="-10" title="Move Up">
+												<span class="icon-arrow-up13"></span>
+											</button>
+										</div>
+
+										<div class="btn-group">
+											<button type="button" class="btn bg-blue btn-icon" data-method="move"
+												data-option="0" data-second-option="10" title="Move Down">
+												<span class="icon-arrow-down132"></span>
+											</button>
+										</div>
+										<div class="btn-group">
+											<button type="button" class="btn bg-blue btn-icon" data-method="zoom"
+												data-option="0.1" title="Zoom In">
+												<span class="icon-zoomin3"></span>
+											</button>
+										</div>
+
+										<div class="btn-group">
+											<button type="button" class="btn bg-blue btn-icon" data-method="zoom"
+												data-option="-0.1" title="Zoom Out">
+												<span class="icon-zoomout3"></span>
+											</button>
+										</div>
+
+										<div class="btn-group">
+											<button type="button" class="btn bg-blue btn-icon" data-method="rotate"
+												data-option="-45" title="Rotate Left">
+												<span class="icon-rotate-ccw3"></span>
+											</button>
+										</div>
+
+										<div class="btn-group">
+											<button type="button" class="btn bg-blue btn-icon" data-method="rotate"
+												data-option="45" title="Rotate Right">
+												<span class="icon-rotate-cw3"></span>
+											</button>
+										</div>
+
+										<div class="btn-group">
+											<button type="button" class="btn bg-blue btn-icon" data-method="scaleX"
+												data-option="-1" title="Flip Horizontal">
+												<span class="icon-flip-vertical4"></span>
+											</button>
+										</div>
+
+										<div class="btn-group">
+											<button type="button" class="btn bg-blue btn-icon" data-method="scaleY"
+												data-option="-1" title="Flip Vertical">
+												<span class="icon-flip-vertical3"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<a href="compare_img.html" class="btn btn-lg btn-primary btn-block">Passer au autre
+									operation</a>
+							</div>
+						</div>
+					</div>
+					<!-- /cropper demonstration -->
+
+					<!-- Footer -->
+					<div class="text-muted text-center">
+						&copy; 2020. By <a href="#">Romaissa Bouksir </a>
+					</div>
+					<!-- /footer -->
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/media/cropper.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/extension_image_cropper.js"></script>
+
+	<script type="text/javascript" src="assets/js/plugins/ui/ripple.min.js"></script>
+	<!-- /theme JS files -->
+</body>
+
+<!-- Mirrored from demo.interface.club/limitless/layout_2/LTR/material/extension_image_cropper.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Jun 2017 07:55:34 GMT -->
+
+</html>
